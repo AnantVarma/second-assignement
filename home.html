@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8a5694a002.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styling.css">
     <title>Document</title>
 </head>
 <body>
     
-        <nav>
-            <ul class="horizontalNav">
-                <img src="w.JPG " style="float: left;width: 40px;margin-top: 10px;"><li class="workspace">Workspace</li>
-                <li class="search"><input type="text" name="search" id="search"   placeholder="search" style="height: 30px; width: 400px;">
-                <button class="search" type="submit" ><i class="fa fa-search" style="height: 20px;width: 30px;"></i></button></li>
-            </ul>
-        </nav>
-       
-    <div>
-        <nav class="nav">
-            <ul class="verticalNav">
-                <li><img src="home.JPG" style="float: left;width: 30px;"><a href="home.html">Home</a></li>
-              
-                <li><img src="user.JPG" style="float: left;width: 30px;"><a href="customer.html">Customers</a></li>
-                <li><img src="department.JPG" style="float: left;width: 30px;"><a href="department.html">Departments</a></li>
-                <li><img src="media.JPG" style="float: left;width: 25px;"><a href="media.html">Media</a></li>
-                <li class="account"><img src="account.JPG" style="float: left;width: 30px;"><a href="account.html" >My Account</a></li>
-            </ul>
-        </nav>
-    </div>
+    <nav>
+        <ul class="horizontalNav">
+            <li class="workspace"><i class="fa-solid fa-w"></i> Workspace</li>
+           
+            <li class="search"><input type="text" name="search" id="search"   placeholder="search" style="height: 30px; width: 400px;margin-top: 10px;"> <button  type="submit" style="height: 30px;width: 30px;"><i class="fa-solid fa-magnifying-glass" ></i></button></li>
+                
+    </nav>
+   
+<div>
+    <nav class="nav">
+        <ul class="verticalNav">
+           <li><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          
+            <li><a href="customer.html"><i class="fa-solid fa-users"></i> Customers</a></li>
+            <li><a href="department.html"><i class="fa-solid fa-building"></i> Departments</a></li>
+            <li><a href="media.html"><i class="fa-solid fa-image"></i> Media</a></li>
+            <li class="account"><a href="account.html" ><i class="fa-solid fa-user" ></i> My Account</a></li>
+        </ul>
+    </nav>
+</div>
+   
     <div class="content">
-        <div  class="box1"   style="background-color: rgba(0, 255, 255, 0.562); width: 400px;height: 200px;border: 5px solid aqua;border-radius: 25px;" ><b>New Customers</b><p>240</p></div><br>     
-        <div  class="box1"   style="background-color: rgba(0, 255, 255, 0.538); width: 400px;height: 200px;border: 5px solid aqua;border-radius: 25px;" ><b>Department Activity</b><p>434+</p></div><br>     
-        <div  class="box1"   style="background-color: rgba(0, 255, 255, 0.499); width: 400px;height: 200px;border: 5px solid aqua;border-radius: 25px;" ><b>Total Media size</b><p>10</p></div><br>
+        <div  class="box1"   style="background-color: rgba(27, 197, 86, 0.562); width: 400px;height: 200px;border: 5px solid rgb(24, 161, 6);border-radius: 25px;" ><b>New Customers</b><p>240</p></div><br>     
+        <div  class="box1"   style="background-color: rgba(196, 20, 220, 0.538); width: 400px;height: 200px;border: 5px solid rgb(151, 5, 158);border-radius: 25px;" ><b>Department Activity</b><p>434+</p></div><br>     
+        <div  class="box1"   style="background-color: rgba(229, 27, 27, 0.499); width: 400px;height: 200px;border: 5px solid rgb(158, 5, 5);border-radius: 25px;" ><b>Total Media size</b><p>10</p></div><br>
     </div>
     <div class="customers">
-        <h1 style="font-size: 90px;color: black;margin-left: 300px;width: 100%;background-color: rgb(108, 13, 108);padding-left: 30px;">
+        
+    <table>
+        <h1 style="font-size: 60px;color: black;margin-left: 15%;width: 80%;background-color: rgba(27, 197, 86, 0.562);padding-left: 30px;border: 5px solid rgb(24, 161, 6);border-top-left-radius: 30px;border-top-right-radius: 30px;margin-bottom: 0%;">
             customers
         </h1>
-    <table>
-        <thead>
+        <thead >
 
                <th>Customer ID</th>
                <th>Department ID</th>
@@ -69,10 +71,11 @@
 
     </table>
     <div class="department">
-        <h1 style="font-size: 90px;color: black;margin-left: 300px;width: 100%;background-color: yellowgreen;padding-left: 30px;">
-            Departments
-        </h1>
+        
         <table>
+            <h1 style="font-size: 60px;color: black;margin-left: 15%;width: 80%;background-color: rgba(196, 20, 220, 0.538);padding-left: 30px;border: 5px solid rgb(151, 5, 158);border-top-left-radius: 30px;border-top-right-radius: 30px;margin-bottom: 0%;">
+                Departments
+            </h1>
             <thead>
 
                 <th>Customer ID</th>
@@ -103,16 +106,17 @@
         </table>
     </div>
     <div >
-        <h1 style="font-size: 90px;color: black;margin-left: 300px;width: 100%;background-color: rgba(205, 50, 50, 0.636);padding-left: 30px;">
+        <h1 style="font-size: 60px;color: black;margin-left: 15%;width: 80%;background-color:   rgba(229, 27, 27, 0.499);padding-left: 30px;border: 5px solid rgb(167, 5, 5);border-radius: 30px;">
             MEDIA
         </h1>
         <DIV class="MEDIA">
-           <div  class="box1"   style="background-color: rgba(205, 50, 50, 0.636); width: 400px;height: 200px;border: 5px solid rgba(205, 50, 50, 0.636);border-radius: 25px;" ><b>Audio</b><p>14 TB</p></div><br>     
-           <div  class="box1"   style="background-color: rgba(205, 50, 50, 0.636); width: 400px;height: 200px;border: 5px solid rgba(205, 50, 50, 0.636);border-radius: 25px;" ><b>Video</b><p>14 TB</p></div><br>     
-           <div  class="box1"   style="background-color: rgba(205, 50, 50, 0.636); width: 400px;height: 200px;border: 5px solid rgba(205, 50, 50, 0.636);border-radius: 25px;" ><b>images</b><p>14 TB</p></div><br>
-           <div  class="box1"   style="background-color: rgba(205, 50, 50, 0.636); width: 400px;height: 200px;border: 5px solid rgba(205, 50, 50, 0.636);border-radius: 25px;" ><b>Files</b><p>14 TB</p></div><br>
+           <div  class="box1"   style="background-color: rgba(248, 244, 5, 0.758); width: 300px;height: 200px;border: 5px solid rgb(167, 169, 22);border-radius: 25px;" ><b>Audio</b><p>14 TB</p></div><br>     
+           <div  class="box1"   style="background-color: rgba(248, 244, 5, 0.758); width: 300px;height: 200px;border: 5px solid rgba(167, 169, 22);border-radius: 25px;" ><b>Video</b><p>14 TB</p></div><br>     
+           <div  class="box1"   style="background-color: rgba(248, 244, 5, 0.758); width: 300px;height: 200px;border: 5px solid rgba(167, 169, 22);border-radius: 25px;" ><b>images</b><p>14 TB</p></div><br>
+           <div  class="box1"   style="background-color:rgba(248, 244, 5, 0.758); width: 300px;height: 200px;border: 5px solid rgba(167, 169, 22);border-radius: 25px;" ><b>Files</b><p>14 TB</p></div><br>
         </DIV>    
     </div>
+
 
 </body>
 </html>

@@ -1,17 +1,26 @@
 
 
 .horizontalNav{
+    
+    overflow: hidden;
+    position: fixed;
+    top: 0;
     height: 60px;
     background-color: rgba(0, 0, 255, 0.627);
+   
+    width: 100%;
+    z-index: 9999;
     
-    
+}
+body{
+    margin-top: 90px;
 }
 .verticalNav{
     background-color: rgba(0, 0, 255, 0.627);
     width: 200px;
-    height:1000px;
+    height:100%;
     margin-top: 0px;
-
+    margin-bottom: 40px;
     list-style: none;
     position: fixed;
 }
@@ -25,11 +34,12 @@ a{
     
    margin-top: 50px;
    width: auto;
+   /* border: 5px solid black; */
    
 }
 .account{
     position: absolute;
-    bottom: 10PX;
+    bottom: 10%;
 }
 .workspace{
     color: aliceblue;
@@ -41,7 +51,8 @@ a{
 .search{
     float: right;
     list-style: none;
-    margin-top: 12px;
+  margin-right: 120px;
+    
    
 }
 .nav{
@@ -49,38 +60,63 @@ a{
     font-size: 30px;
 }
 .content,.MEDIA{
-    margin-left: 400px;
-   
+    margin-left: 17%;
+    margin-right: 7%;
     display:flex;
     flex-direction: row;
-    justify-content:space-between;
-    
-    
+    justify-content:space-between;  
 }
 .box1{
     margin: 10px;
     padding: 30px;
     font-size: 30px;
 }
-.customers table,th,td{
-    background-color: rgba(128, 0, 128, 0.408);
-    border: 4px solid purple;
-    border-radius: 25px;
-    font-size: 50px;
-    border-collapse: collapse;
-}
-.department table,th,td{
-    background-color: rgba(153, 205, 50, 0.505);
-    border: 4px solid yellowgreen;
-    border-radius: 25px;
-    font-size: 50px;
-    border-collapse: collapse;
-}
 table{
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 0px;
     border-radius: 25px;
 }
+th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.customers td{
+    padding-left: 146px;
+    padding-right: 146px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    border:5px solid rgb(24, 161, 6) ;
+}.customers th{
+    border:5px solid rgb(24, 161, 6) ;
+}
+.department th{
+    border:5px solid  rgb(151, 5, 158) ;
+}
+.department td{
+    padding-left: 155px;
+    padding-right: 155px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    border:5px solid  rgb(151, 5, 158) ;
+
+}
+.customers table{
+    margin-left: 15%;
+    border:5px solid rgb(24, 161, 6) ;
+    border-collapse: collapse;
+}
+.department table{
+    margin-left: 15%;
+    border:5px solid  rgb(151, 5, 158) ;
+    border-collapse: collapse;
+}
+
+
+
 .bottom li{
     list-style: none;
     display: inline-block;
@@ -97,23 +133,29 @@ table{
 }
 .image img{
     border: 3px solid orange;
+    
    
 }
 iframe{
     margin-right: 50px;
     margin-left: 40px;
     
+
+    
 }
 audio{
     margin-right: 200px;
-    margin-left: 100px;
+    margin-left: 80px;
+    margin-right: 0px;
+   
 }
 .verticalNav a:hover{
    
-    background-color: brown;
+    background-color: rgb(57, 34, 125);
     color: black;
 
+
 }
-.verticalNav a.active{
+a:active{
     background-color: brown;
 }
