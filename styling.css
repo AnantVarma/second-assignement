@@ -130,6 +130,10 @@ th{
     margin-left: 50px;
     display: flex;
     justify-content: space-evenly;
+    
+}
+.imgrow2{
+    margin-top: 40px;
 }
 .image img{
     border: 3px solid orange;
@@ -139,7 +143,7 @@ th{
 iframe{
     margin-right: 50px;
     margin-left: 40px;
-    
+    width: 450px;
 
     
 }
